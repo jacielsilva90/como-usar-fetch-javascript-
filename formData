@@ -1,0 +1,14 @@
+
+O formdata captura dados de form pelo name.
+Crie um form em html
+<form id="meu-formulario">
+    <input type="text" name="nome" value="João">
+    <input type="email" name="email" value="joao@email.com">
+    <button type="submit">Enviar</button>
+</form>
+
+No arquivo js capture o form e adicione no formdata.
+const formulario = document.querySelector("#meu-formulario");
+const formData = new FormData(formulario);
+//formData.get("nome"); // "João"
+formData.has(nome) // se existe a chave
